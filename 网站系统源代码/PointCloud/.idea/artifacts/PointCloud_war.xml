@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PointCloud:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="PointCloud.war">
+      <element id="artifact" artifact-name="PointCloud:war exploded" />
+    </root>
+  </artifact>
+</component>
