@@ -1,7 +1,7 @@
 # Point2Mesh-website
-演示视频<br>
+Presentation Video(Chinese)<br>
 https://www.bilibili.com/video/av30430488
-## 1 Purpose of design
+## Purpose of design
 In the research related to computer graphics, we usually need transform point cloud to meshes, the quality of meshes generated determines the outcome out further modeling, #D printing, etc. However, we usually need to adjust the patameters of the code(e.g. using libraries like PCL) and compile them over and over again. constructing a environment for different libraries is also a burden. Visualization also requires some extra work to be done. <br>  The Point2Mesh project deployed two most useful libraries: PCL and JHU open souorced library, the website can transform the point cloud into meshes using the parameters given by the user. Furthermore, it uses WebGL to visualize the result of the transformation. <br>  With this website, we can use only one server to process all the desired meshes and see the result right away. Other functions like filtering/mesh triming were also built in it.
 
 ### FrontEnd Visualization
@@ -52,3 +52,16 @@ For the undefined normal vector in the ply file, increase the normal vector.
 #### 9)Triangular mesh optimization
 For some generated meshes, this feature detects its thin portion based on parameters and cuts it. <br>
 The main parameters are: the threshold of the surface shear.
+
+## Envirnment && Deployment
+### Set up PCL environment
+http://pointclouds.org/documentation/tutorials/compiling_pcl_windows.php
+
+### Build JHU Open source 
+http://www.cs.jhu.edu/~misha/Code/PoissonRecon/Version10.07/
+
+
+#### Install maven and pack the website
+```
+mvn clean package -DskipTests
+```
