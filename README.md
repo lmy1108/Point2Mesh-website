@@ -1,15 +1,17 @@
 # Point2Mesh-website
 Presentation Video(Chinese)<br>
-https://www.bilibili.com/video/av30430488
+https://youtu.be/T2lWXKDOvD0
+
+
+## Purpose of design
+In the research related to computer graphics, we usually need transform point cloud to meshes, the quality of meshes generated determines the outcome out further modeling, #D printing, etc. However, we usually need to adjust the patameters of the code(e.g. using libraries like PCL) and compile them over and over again. constructing a environment for different libraries is also a burden. Visualization also requires some extra work to be done. <br>  The Point2Mesh project deployed two most useful libraries: PCL and JHU open souorced library, the website can transform the point cloud into meshes using the parameters given by the user. Furthermore, it uses WebGL to visualize the result of the transformation. <br>  With this website, we can use only one server to process all the desired meshes and see the result right away. Other functions like filtering/mesh triming were also built in it.
+
 ## Front Pages
 ![image1](https://github.com/lmy1108/Point2Mesh-website/blob/master/images/mesh2.PNG)
 ![image2](https://github.com/lmy1108/Point2Mesh-website/blob/master/images/mesh3.PNG)
 
 ![image3](https://github.com/lmy1108/Point2Mesh-website/blob/master/images/mesh4.PNG)
 ![image4](https://github.com/lmy1108/Point2Mesh-website/blob/master/images/test5.gif)
-
-## Purpose of design
-In the research related to computer graphics, we usually need transform point cloud to meshes, the quality of meshes generated determines the outcome out further modeling, #D printing, etc. However, we usually need to adjust the patameters of the code(e.g. using libraries like PCL) and compile them over and over again. constructing a environment for different libraries is also a burden. Visualization also requires some extra work to be done. <br>  The Point2Mesh project deployed two most useful libraries: PCL and JHU open souorced library, the website can transform the point cloud into meshes using the parameters given by the user. Furthermore, it uses WebGL to visualize the result of the transformation. <br>  With this website, we can use only one server to process all the desired meshes and see the result right away. Other functions like filtering/mesh triming were also built in it.
 
 ### FrontEnd Visualization
 Front End uses javascript to make mesh results visualize according to the given point cloud and parameters given.
